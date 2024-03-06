@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
+
+
 from pathlib import Path
 import os
 
@@ -27,7 +29,6 @@ SECRET_KEY = 'django-insecure-2!8os+qk#fvt4o^)(r_s1*6+p=e&y6-#sf=a*eodi#l&gow6l)
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -83,6 +84,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'main_app.context_processors.extras'
+                'django.contrib.sites.context_processors.current_site',
             ],
         },
     },
