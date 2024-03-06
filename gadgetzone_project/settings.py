@@ -92,7 +92,7 @@ WSGI_APPLICATION = 'gadgetzone_project.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/4.2/ref/settings/#database
 
 
 DATABASES = {
@@ -174,7 +174,7 @@ AUTHENTICATION_BACKENDS = (
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
-SITE_ID = 1
+SITE_ID = 2
 LOGIN_REDIRECT_URL = 'main_app:home'
 
 LOGIN_URL = '/gauth/login/'
@@ -184,7 +184,7 @@ ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'none' 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' 
-EMAIL_HOST = 'smtp.gmail.com' 
+EMAIL_HOST = 'smtp.gmail.com'     
 EMAIL_PORT = 587 
 EMAIL_HOST_USER = '123arunbalakrishnan@gmail.com'  
 EMAIL_HOST_PASSWORD = "zygltiuakwpcdjdg" 
