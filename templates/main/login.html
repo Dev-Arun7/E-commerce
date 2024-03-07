@@ -75,14 +75,14 @@
       />
       <br />
 
-      <form
+      {% comment %} <form
         id="googleForm"
         action="{% provider_login_url 'google' %}"
         method="post"
         style="display: none"
       >
         {% csrf_token %}
-      </form>
+      </form> {% endcomment %}
 
       <script>
         function submitForm() {

@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     # allauth apps
     'django.contrib.sites', 
     'allauth',
-    'allauth.account',
+    'allauth.account' ,
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
 ]
@@ -84,7 +84,6 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'main_app.context_processors.extras'
-                'django.contrib.sites.context_processors.current_site',
             ],
         },
     },
@@ -176,7 +175,7 @@ AUTHENTICATION_BACKENDS = (
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
-SITE_ID = 2
+SITE_ID = 1
 LOGIN_REDIRECT_URL = 'main_app:home'
 
 LOGIN_URL = '/gauth/login/'
