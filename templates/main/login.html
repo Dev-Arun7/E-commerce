@@ -1,17 +1,4 @@
-{% comment %}
-<!--Login-->
-<div class="container py-5">
-  <h1>Login</h1>
-  <form method="POST">
-    {% csrf_token %} {{ login_form }}
-    <button class="btn btn-primary" type="submit">Login</button>
-  </form>
-  <p class="text-center">
-    Don't have an account?
-    <a href="{% url 'gauth_app:user_signup' %}">Create an account</a>.
-  </p>
-</div>
-{% endcomment %} 
+
 {% load socialaccount %} {% load static %}
 <link
   rel="stylesheet"
@@ -98,16 +85,6 @@
       </script>
       <br />
 
-      {% comment %}
-      <a href="{% provider_login_url 'google' %}" class="text-dark">
-        <img
-          src="{% static 'main/images/others/google.png' %}"
-          class="hover-effect"
-          style="width: 14rem; height: auto"
-        />
-      </a>
-      <br />
-      {% endcomment %}
     </div>
     <form method="POST">
       {% csrf_token %}
