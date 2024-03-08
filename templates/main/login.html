@@ -74,15 +74,14 @@
         onmouseout="removeHoverEffect(this)"
       />
       <br />
-
-      {% comment %} <form
+      <form
         id="googleForm"
         action="{% provider_login_url 'google' %}"
         method="post"
         style="display: none"
       >
         {% csrf_token %}
-      </form> {% endcomment %}
+      </form> 
 
       <script>
         function submitForm() {
